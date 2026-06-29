@@ -34,7 +34,18 @@
             </div>
             <div>
                 <label for="age">Age: </label>
-                <input type="number" id="age" name="userage" placeholder="Enter your age">
+                <input type="number" id="age" name="userage" placeholder="Enter your age" min="18" max="100">
+            </div>
+            <div>
+                <label for="country">Choose your Country:</label>
+                <select name="yourcountry" id="country">
+                    <option value="">-- Select a country --</option>
+                    <option value="UK">UK</option>
+                    <option value="USA">USA</option>
+                    <option value="Japan">Japan</option>
+                    <option value="Canada">Canada</option>
+                    <option value="Italy">Italy</option>
+                </select>
             </div>
             <div>
                 <label for="job">Occupation: </label>
@@ -74,6 +85,11 @@
                     <label for="cooking">Cooking</label>
                 </div>
             </fieldset>
+            <div>
+                <label for="biography">Tell us about yourself.</label>
+                <textarea name="yourbiography" id="biography" placeholder="tell us about yourself." rows="4" cols="30"
+                    minlength="10" maxlength="80" required></textarea>
+            </div>
             <br>
             <button type="submit">Submit</button>
             <button type="reset">Reset</button>
